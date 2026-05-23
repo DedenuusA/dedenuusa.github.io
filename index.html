@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deden Uus Aprianto | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-950 text-white">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur border-b border-slate-800 z-50">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-400">Deden.dev</h1>
+
+        <ul class="hidden md:flex gap-8 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center justify-center px-6 text-center">
+      <div class="max-w-3xl">
+        <p class="text-blue-400 uppercase tracking-widest font-semibold mb-4">Web Developer</p>
+
+        <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Laravel &
+          <span class="text-blue-400"> Full Stack Developer </span>
+        </h2>
+
+        <p class="text-slate-400 text-lg leading-relaxed mb-8">Saya membuat aplikasi web modern menggunakan Laravel, React, Tailwind CSS, dan teknologi web terbaru.</p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#projects" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold transition"> Lihat Project </a>
+
+          <a href="#contact" class="border border-slate-700 hover:border-blue-400 px-6 py-3 rounded-xl font-semibold transition"> Hubungi Saya </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-10">Tentang Saya</h2>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12">
+          <p class="text-slate-300 text-lg leading-relaxed">Saya adalah programmer yang fokus dalam pengembangan aplikasi web menggunakan Laravel, PHP, JavaScript, MySQL, dan React.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 px-6 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-14">Skills</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">Laravel</div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">PHP</div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">JavaScript</div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">React</div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">MySQL</div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-blue-400 transition">Tailwind CSS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-14">Projects</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Wedding App" class="w-full h-52 object-cover" />
+
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3">Wedding App</h3>
+
+              <p class="text-slate-400 mb-5 leading-relaxed">Aplikasi undangan digital modern berbasis Laravel dengan fitur RSVP, galeri foto, musik, dan dashboard admin.</p>
+
+              <a href="https://weddingapp.my.id" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-medium transition"> Demo </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
+            <img src="https://photoboothapp.lovestoblog.com/images/sd.jpg" alt="Photobooth App" class="w-full h-52 object-cover" />
+
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3">Photobooth App</h3>
+
+              <p class="text-slate-400 mb-5 leading-relaxed">Aplikasi photobooth digital modern dengan fitur capture kamera, template frame, gallery, dan download hasil foto otomatis.</p>
+
+              <a href="https://photoboothapp.lovestoblog.com/" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-medium transition"> Demo </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <!-- <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" class="w-full h-52 object-cover" />
+
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3">Company Profile</h3>
+
+              <p class="text-slate-400 mb-5">Landing page profesional untuk bisnis dan perusahaan.</p>
+
+              <button class="bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl">Detail</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 bg-slate-900/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+
+        <p class="text-slate-400 mb-10">Tertarik bekerja sama atau membuat project?</p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:nofirahmadani01@icloud.com" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl"> Email </a>
+
+          <a href="https://wa.me/6283895984741" class="border border-slate-700 hover:border-blue-400 px-6 py-3 rounded-xl"> WhatsApp </a>
+
+          <a href="https://github.com/DedenuusA" class="border border-slate-700 hover:border-blue-400 px-6 py-3 rounded-xl"> GitHub </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500">© 2026 Deden Uus Aprianto</footer>
+  </body>
+</html>
