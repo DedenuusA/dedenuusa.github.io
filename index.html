@@ -80,49 +80,80 @@
     <!-- Projects -->
     <section id="projects" class="py-24 px-6">
       <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14">Projects</h2>
+        <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Wedding App" class="w-full h-52 object-cover" />
+        <!-- Wrapper -->
+        <div class="relative">
+          <!-- Button Left -->
+          <button onclick="scrollLeftProjects()" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-full shadow-lg">←</button>
 
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mb-3">Wedding App</h3>
+          <!-- Scroll Container -->
+          <div id="projectSlider" class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 snap-x snap-mandatory scrollbar-hide">
+            <!-- CARD 1 -->
+            <div class="min-w-[320px] md:min-w-[380px] bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden snap-start">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" class="w-full h-52 object-cover" />
 
-              <p class="text-slate-400 mb-5 leading-relaxed line-clamp-3">Aplikasi undangan digital modern berbasis Laravel dengan fitur RSVP, galeri foto, musik, dan dashboard admin.</p>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3">Wedding App</h3>
+                <p class="text-slate-400 mb-5 line-clamp-3">Aplikasi undangan digital modern berbasis Laravel.</p>
+                <a href="#" class="bg-blue-500 px-5 py-2 rounded-xl inline-block"> Demo </a>
+              </div>
+            </div>
 
-              <a href="https://weddingapp.my.id" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-medium transition"> Demo </a>
+            <!-- CARD 2 -->
+            <div class="min-w-[320px] md:min-w-[380px] bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden snap-start">
+              <img src="https://photoboothapp.lovestoblog.com/images/sd.jpg" class="w-full h-52 object-cover" />
+
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3">Photobooth App</h3>
+                <p class="text-slate-400 mb-5 line-clamp-3">Aplikasi photobooth digital dengan frame dan capture.</p>
+                <a href="#" class="bg-blue-500 px-5 py-2 rounded-xl inline-block"> Demo </a>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="min-w-[320px] md:min-w-[380px] bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden snap-start">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop" class="w-full h-52 object-cover" />
+
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3">AI Generator</h3>
+                <p class="text-slate-400 mb-5 line-clamp-3">AI video & image generator berbasis prompt.</p>
+                <a href="#" class="bg-blue-500 px-5 py-2 rounded-xl inline-block"> GitHub </a>
+              </div>
+            </div>
+
+            <!-- CARD 4 (FIXED FORMAT) -->
+            <div class="min-w-[320px] md:min-w-[380px] bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden snap-start">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" class="w-full h-52 object-cover" />
+
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3">ERP Toko System</h3>
+
+                <p class="text-slate-400 mb-5 line-clamp-3">Sistem ERP untuk penjualan, pembelian, stok barang, dan laporan bisnis secara real-time.</p>
+
+                <a href="https://github.com/DedenuusA/ERP-Toko" target="_blank" class="bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl inline-block"> View GitHub </a>
+              </div>
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
-            <img src="https://photoboothapp.lovestoblog.com/images/sd.jpg" alt="Photobooth App" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mb-3">Photobooth App</h3>
-
-              <p class="text-slate-400 mb-5 leading-relaxed line-clamp-3">Aplikasi photobooth digital modern dengan fitur capture kamera, template frame, gallery, dan download hasil foto otomatis.</p>
-
-              <a href="https://photoboothapp.lovestoblog.com/" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-medium transition"> Demo </a>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop" alt="AI Studio" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mt-2 mb-4">AI Powered Content Generator</h3>
-
-              <p class="text-slate-400 leading-relaxed mb-6 line-clamp-3">Generate cinematic AI videos from photos and text prompts instantly. Create realistic motion videos using advanced AI technology.</p>
-              <a href="https://github.com/DedenuusA/ai-video-generator" class="inline-block bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-medium transition"> View GitHub </a>
-            </div>
-          </div>
+          <!-- Button Right -->
+          <button onclick="scrollRightProjects()" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-full shadow-lg">→</button>
         </div>
       </div>
     </section>
+
+    <!-- JS -->
+    <script>
+      const slider = document.getElementById("projectSlider");
+
+      function scrollLeftProjects() {
+        slider.scrollBy({ left: -380, behavior: "smooth" });
+      }
+
+      function scrollRightProjects() {
+        slider.scrollBy({ left: 380, behavior: "smooth" });
+      }
+    </script>
 
     <!-- Contact -->
     <section id="contact" class="py-24 px-6 bg-slate-900/50">
